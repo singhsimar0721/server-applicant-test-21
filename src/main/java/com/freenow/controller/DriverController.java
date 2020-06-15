@@ -78,4 +78,24 @@ public class DriverController
     {
         return DriverMapper.makeDriverDTOList(driverService.find(onlineStatus));
     }
+    
+    @PutMapping("/{driverId}/{carId}")
+    public void selectCar(@PathVariable long driverId, @PathVariable long carId)throws Exception
+    {
+        driverService.updateCarSelection(driverId, carId);
+    }
+    
+    @PutMapping("deselect/{driverId}")
+    public void unselectCar(@PathVariable long driverId)throws Exception
+    {
+        driverService.unselectCar(driverId);
+    }
+    
+    @GetMapping("/search/{searchText}")
+    public List<DriverDTO> search(@PathVariable String searchText) throws EntityNotFoundException
+    {
+        return DriverMapper.makeDriverDTOList(driverService.search(searchText));
+    }
+    
+    
 }

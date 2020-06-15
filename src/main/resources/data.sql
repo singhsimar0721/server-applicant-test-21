@@ -40,3 +40,21 @@ values
  (8,
  'aced0005737200226f72672e737072696e676672616d65776f726b2e646174612e67656f2e506f696e7431b9e90ef11a4006020002440001784400017978704023000000000000404bfa1cac083127', now(), now(), false, 'ONLINE',
 'driver08pw', 'driver08');
+
+--Create CAR table and insert following details:
+
+insert into car(id,date_created,engine,is_convertible, license_plate,manufacturer, model,origin,vehicle_type,rating,seat_count,deleted,is_in_use) values(1, now(), 'PETROL',false, 'DXB-99654','Mercedes-AMG','GT 63 S',
+'Germany','COUPE',4.7,5,false,false);
+
+insert into car(id,date_created,engine,is_convertible, license_plate,manufacturer, model,origin,vehicle_type,rating,seat_count,deleted,is_in_use) values(2, now(), 'DIESEL',false, 'SHJ-99650','BMW','X6',
+'Germany','SUV',4.5,7,false,false);
+
+insert into car(id,date_created,engine,is_convertible, license_plate,manufacturer, model,origin,vehicle_type,rating,seat_count,deleted,is_in_use) values(3, now(), 'ELECTRIC',true, 'DXB-99111','Tesla','MODEL S',
+'USA','SEDAN',4.2,5,false,false);
+
+insert into car(id,date_created,engine,is_convertible, license_plate,manufacturer, model,origin,vehicle_type,rating,seat_count,deleted,is_in_use) values(4, now(), 'GAS',false, 'DXB-99999','TOYOTA','LAND CRUISER',
+'Japan','XUV',4.6,7,false,false);
+
+
+
+
